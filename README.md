@@ -17,6 +17,7 @@ codeceptjs def
 ```
 ### Gulp.js
 * [gulp](http://gulpjs.com/)
+
 You should install gulp in order to be able to use the gulp-tasks
 
 To install gulp run:
@@ -25,9 +26,6 @@ npm install --global gulp-cli
 ```
 ```
 npm install --save-dev gulp
-```
-```
-npm install --save-dev gulp del
 ```
 
 ### Selenium standalone server
