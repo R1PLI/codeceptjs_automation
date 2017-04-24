@@ -17,3 +17,5 @@ You should install selenium standalone server and chromedriver from npm
 
 npm i -g selenium-standalone
 selenium-standalone install
+
+To run selenium server use: selenium-standalone start
