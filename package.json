@@ -6,7 +6,10 @@
   "dependencies": {
     "codeceptjs-webdriverio": "^1.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2"
+  },
   "scripts": {
     "test": "mocha"
   },
