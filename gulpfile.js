@@ -1,8 +1,10 @@
 let gulp = require('gulp');
-let clean = require('gulp-clean');
+let del = require('del');
 
-gulp.task('default', function () {
-    return gulp.src('./output')
-        .pipe(clean({force: true}))
-        .pipe(gulp.dest('dist'));
+gulp.task('clean:output_folder', function () {
+    return del([
+        'output/*',
+    ]);
 });
+
+gulp.task('default', ['clean:output_folder']);
