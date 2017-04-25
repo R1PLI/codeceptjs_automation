@@ -1,6 +1,9 @@
-let gulp = require('gulp');
-let del = require('del');
-let exec = require('child_process').exec;
+'use strict';
+
+const gulp = require('gulp');
+const del = require('del');
+const exec = require('child_process').exec;
+const open = require('gulp-open');
 
 gulp.task('clean', function () {
     return del([
@@ -20,3 +23,10 @@ gulp.task('default', function () {
 		console.log('This is gulp, hi!');
 });
 
+gulp.task('open', function(){
+    let options = {
+        app: 'chrome'
+    };
+    gulp.src('output/*.html')
+        .pipe(open(options));
+});
