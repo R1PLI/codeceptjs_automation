@@ -8,15 +8,15 @@ gulp.task('clean', function () {
     ]);
 });
 
-gulp.task('selenium', function (cb) {
-    exec('selenium-standalone start', function (err, stdout, stderr) {
-        console.log("Selenium is running");
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
+gulp.task('server', function (cb) {
+		exec('selenium-standalone start', function (err, stdout, stderr) {
+				console.log(stdout);
+				console.log(stderr);
+				cb(err);
+		});
 });
 
 gulp.task('default', function () {
-    console.log('Hi, this is Gulp.js!');
+		console.log('This is gulp, hi!');
 });
+
