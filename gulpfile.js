@@ -23,6 +23,8 @@ gulp.task('default', function () {
 		console.log('This is gulp, hi!');
 });
 
+gulp.task('preparation', ['clean', 'server']);
+
 gulp.task('open', function(){
     let options = {
         app: 'chrome'
